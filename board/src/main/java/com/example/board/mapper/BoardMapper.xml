@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+ 
+<mapper namespace="com.example.board.mapper.BoardMapper">
+ 
+    <select id="selectBoardCnt" resultType="int">
+        SELECT count(*)
+        FROM BOARD
+    </select>
+    
+    <select id="selectBoardList" resultType="com.example.board.dto.BoardDto">
+    	SELECT *
+    	FROM board
+    	ORDER BY bno DESC
+    	LIMIT #{startList}, #{listSize}
+    </select>
+    
+    <select id="selectBoardDetail" parameterType="int" resultType="com.example.board.dto.BoardDto">
+    	SELECT *
+    	FROM board
+    	WHERE bno = #{bno}
+    </select>
+    
+    <insert id="insertBoard" parameterType="com.example.board.dto.BoardDto">
+    	INSERT INTO board (bno, title, content, writer, reg_date)
+    	VALUES(#{bno}, #{title}, #{content}, #{writer}, now())
+    </insert>
+    
+    <update id="updateBoard" parameterType="com.example.board.dto.BoardDto">
+    	UPDATE board
+    	SET
+        title = #{title}, CONTENT = #{content}
+        WHERE BNO = #{bno}
+    </update>
+    
+    <delete id="deleteBoard" parameterType="int">
+    	DELETE FROM board
+    	WHERE bno = #{bno}
+    </delete>
+</mapper>
