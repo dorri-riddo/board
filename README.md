@@ -13,21 +13,26 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/59874084/91931885-a9659f80-ed1f-11ea-9eb6-df41b64b1835.JPG"></img>
 </p>
+
 #### 1. 메인 화면
+
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/59874084/91931932-c7cb9b00-ed1f-11ea-986e-819dac9dbcf2.JPG"></img>
 </p>
+
 #### 2. 상세 화면
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/59874084/91931850-8e932b00-ed1f-11ea-9363-da60a6676aee.JPG"></img>
 </p>
-#### 2.  화면
+
+#### 3. 글쓰기 화면
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/59874084/91931937-c9955e80-ed1f-11ea-959a-5191d2c3b27d.JPG"></img>
 </p>
+
 #### 4. 수정 화면
 
 
